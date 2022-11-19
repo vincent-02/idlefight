@@ -17,3 +17,10 @@ function fight() {
     document.getElementById('experience').value = xp;
   }
 }
+
+function purchase(item) {
+  this.item = item;
+  if (item = "steel_sword".toLowerCase()) {
+    power += 2;
+  }
+}
