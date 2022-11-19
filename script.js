@@ -26,6 +26,10 @@ function purchasesteelsword() {
   if (steel_sword_purchased) {
     if (gold >= 50) {
       power += 5;
+      gold -= 50;
+      steel_sword_purchased = true;
+      document.getElementById('purchasesteelsword').style.backgroundColor = "gray";
+      document.getElementById('purchasesteelsword').style.cursor = "not-allowed";
     }
   }
 }
