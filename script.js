@@ -23,7 +23,7 @@ function fight() {
 }
 
 function purchasesteelsword() {
-  if (steel_sword_purchased == false) {
+  if (steel_sword_purchase == false) {
     if (gold >= 50) {
       power += 5;
       gold -= 50;
