@@ -8,7 +8,7 @@ let steel_sword_purchased = false;
 function fight() {
   xp += power;
   gold += level;
-  document.getElementById('gold').innerHTML="$" + gold;
+  document.getElementById('gold').innerText="$" + gold;
   document.getElementById('experience').value = xp;
   if (xp >= max) {
     xp -= max;
@@ -27,9 +27,10 @@ function purchasesteelsword() {
     if (gold >= 50) {
       power += 5;
       gold -= 50;
+      document.getElementById('gold').innerText="$" + gold;
       document.getElementById('purchasesteelsword').style.backgroundColor = "gray";
       document.getElementById('purchasesteelsword').style.cursor = "not-allowed";
+      steel_sword_purchased = true;
     }
   }
-  steel_sword_purchased = true;
 }
