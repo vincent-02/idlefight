@@ -29,7 +29,7 @@ function purchasesteelsword() {
       gold -= 50;
       document.getElementById('purchasesteelsword').style.backgroundColor = "gray";
       document.getElementById('purchasesteelsword').style.cursor = "not-allowed";
-      steel_sword_purchased = true;
     }
   }
+  steel_sword_purchased = true;
 }
